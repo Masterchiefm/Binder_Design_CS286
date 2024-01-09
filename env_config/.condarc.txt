@@ -1,0 +1,16 @@
+channels:
+  - defaults
+  - https://levinthal:paradox@conda.graylab.jhu.edu
+show_channel_urls: true
+default_channels:
+  - https://mirrors.shanghaitech.edu.cn/anaconda/pkgs/main
+  - https://mirrors.shanghaitech.edu.cn/anaconda/pkgs/r
+  - https://mirrors.shanghaitech.edu.cn/anaconda/pkgs/msys2
+custom_channels:
+  conda-forge: https://mirrors.shanghaitech.edu.cn/anaconda/cloud
+  msys2: https://mirrors.shanghaitech.edu.cn/anaconda/cloud
+  bioconda: https://mirrors.shanghaitech.edu.cn/anaconda/cloud
+  menpo: https://mirrors.shanghaitech.edu.cn/anaconda/cloud
+  pytorch: https://mirrors.shanghaitech.edu.cn/anaconda/cloud
+  pytorch-lts: https://mirrors.shanghaitech.edu.cn/anaconda/cloud
+  simpleitk: https://mirrors.shanghaitech.edu.cn/anaconda/cloud
