@@ -25,3 +25,7 @@ mamba install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
 # Ref: https://discuss.tensorflow.org/t/attributeerror-module-numpy-has-no-attribute-typedict/14929/9
 # mamba install numpy=1.19
 pip install --upgrade h5py
+
+# fix tensorflow erro:
+mamba remove tensorflow -y
+mamba install tensorflow=2.12

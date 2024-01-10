@@ -9,6 +9,16 @@ try:
 except:
     import os
     os.system('pip install numpy')
+    import numpy as np
+
+try:
+    import pandas as pd
+except:
+    import os
+    os.system('pip install pandas')
+    import pandas as pd
+    
+    
     
 def cal_mass(atoms):
     """输入一串原子，输出总质量。

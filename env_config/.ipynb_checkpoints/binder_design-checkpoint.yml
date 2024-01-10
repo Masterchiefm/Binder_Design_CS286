@@ -13,6 +13,7 @@ dependencies:
   - tensorflow=2.12
   - pyrosetta
   - mock
+  - pandas
   - pip
   - pip:
     - --find-links https://storage.googleapis.com/jax-releases/jax_cuda_releases.html

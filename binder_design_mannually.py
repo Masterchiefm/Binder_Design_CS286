@@ -80,6 +80,18 @@ import os
 import sys
 from os.path import abspath
 from pathlib import Path
+try:
+    import pandas as pd
+except:
+    os.system('python -m pip install pandas')
+    import pandas as pd
+
+try:
+    import numpy as np
+except:
+    os.system('python -m pip install numpy')
+    import numpy as np
+
 
 def check_output(path):
     """用来判断这一步是否完整执行。

@@ -36,14 +36,20 @@ channels:
    1) Open the file "binder_design_mannually.py" and then modify the
    "Input Cell" according to your design.
 
-   2) Save changes and run the py file in current directory, don't run it in 
+   2) Before run the script, please make sure there is "pandas" and "numpy" in current enviroment
+    If not, please install them by:
+    ```
+    pip install pandas numpy
+    ```
+
+   4) Save changes and run the py file in current directory, don't run it in 
       other directory. And you don't need to activate the conda, for
       the script will activate it automatically.
       ```
       python3 binder_design_mannually.py
       ```
 
-   3) Wait for Results
+   5) Wait for Results
 ## Troble shooting
 If you encounter erro like this:
 ```
