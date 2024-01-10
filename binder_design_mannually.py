@@ -32,7 +32,7 @@ output_folder = "testout"
 
 # Other configurations
 ## RF structure generation params
-num_designs=4
+num_designs=4000
 noise_scale_ca=0.2
 noise_scale_frame=0.1
 
