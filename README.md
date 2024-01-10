@@ -3,7 +3,27 @@
 
  Contributors: Qiqin Mo, Hao Zhang, Daohong Gong, Ken Chen
 
+ Protein-Protein interaction plays important roles in biological proccess.
+ If we can create a mini-protein to bind to a specific protein, we may alter
+ the life proccess.
+
+ David Baker team created RFdiffussion and ProteinMPNN, which makes in-silico protein 
+ design possible. However, their split the work into several projects, which wast me too
+ much time to configure the enviroment. 
+
+ In the idea that make things easier, we combine all of the wheels and pack them into a handy car.
+ Everyone can use it fast and easy.
+
+ We also add a filter for RF generated structures. These filters will filter out those unstable structures 
+ with long alpha-helix, and filter out binders distant from targets. With these filters, we filter out 
+ about 70% of the RF generated structures that is useless. By doing so, we reduced time greatly and save
+ much computational resource.
+
+ **Most importantly, we make binder design easier, which save YOUR TIME!**
+ 
+
  This repo is designed to make binder design easier and accomlish the task of CS286 course.
+ 
  This repo is the join-effort of the Contributors. Each of them is indispensable
 
 ## Setup
@@ -11,12 +31,14 @@
     The environment require PyRosetta which requires a license that
    is free to academics and available [here](https://graylab.jhu.edu/pyrosetta/downloads/documentation/PyRosetta_Install_Tutorial.pdf).
    This license will give you access to the USERNAME and PASSWORD
-   referenced below. If you do not provide this USERNAME and PASSWORD,
+   
+   If you do not provide this USERNAME and PASSWORD,
    you will get a CondaHTTPError when you attempt to run the installation.
 
 After getting license, modify your condarc:
  - Ensure that you have the PyRosetta channel included in your ~/.condarc
-Your ~/.condarc should look something like this:
+   
+**Your ~/.condarc should look something like this:**
 ```
 channels:
   - defaults
@@ -55,9 +77,10 @@ channels:
       ```
 
    5) Wait for Results.
-     
+      
     You can find your top n binders in {output_folder}/top_n
     All output structures can be found in {output_folder}
+    
     ```
     top_n               ------- The top n structure rank by Pae_interaction_score
     AF_out              ------- Crossed validate by AF, and its output structures, sequence can be found in chain A of each pdb file
@@ -82,7 +105,8 @@ mamba install tensorflow=2.12
 ```
 This will solve the numpy erro while using tensorflow.
 
-### Optional
+-------------------------
+## Optional
 You can find a conda env created in your home directory, which is
 named binder_design.
 
