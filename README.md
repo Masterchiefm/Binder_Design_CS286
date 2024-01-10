@@ -1,6 +1,11 @@
 # Binder_Design_Pipline
  Binder_Design_Pipline for CS286
 
+ Contributors: Qiqin Mo, Hao Zhang, Daohong Gong, Ken Chen
+
+ This repo is designed to make binder design easier and accomlish the task of CS286 course.
+ This repo is the join-effort of the Contributors. Each of them is indispensable
+
 ## Setup
 1. Applied licence of pyRosseta
     The environment require PyRosetta which requires a license that
