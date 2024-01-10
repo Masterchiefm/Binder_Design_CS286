@@ -28,4 +28,4 @@ pip install --upgrade h5py
 
 # fix tensorflow erro:
 mamba remove tensorflow -y
-mamba install tensorflow=2.12
+mamba install tensorflow=2.12 -y
