@@ -37,8 +37,8 @@ if os.path.isdir("dl_binder_design/af2_initial_guess/model_weights/params"):
     if q.upper() == "Y":
         os.system("rm -rf dl_binder_design/af2_initial_guess/model_weights/params")
         os.system("mkdir -p dl_binder_design/af2_initial_guess/model_weights/params")
-        os.system("wget https://storage.googleapis.com/alphafold/alphafold_params_2022-12-06.tar -O dl_binder_design/af2_initial_guess/model_weights/params/alphafold_params_2022-12-06.tar")
-        # os.system("wget http://hub.mahhlab.org/downloads/alphafold_params_2022-12-06.tar -O dl_binder_design/af2_initial_guess/model_weights/params/alphafold_params_2022-12-06.tar")
+        # os.system("wget https://storage.googleapis.com/alphafold/alphafold_params_2022-12-06.tar -O dl_binder_design/af2_initial_guess/model_weights/params/alphafold_params_2022-12-06.tar")
+        os.system("wget http://hub.mahhlab.org/downloads/alphafold_params_2022-12-06.tar -O dl_binder_design/af2_initial_guess/model_weights/params/alphafold_params_2022-12-06.tar")
         
         
         os.system("cd dl_binder_design/af2_initial_guess/model_weights/params && tar --extract --verbose --file=alphafold_params_2022-12-06.tar")
@@ -46,7 +46,7 @@ if os.path.isdir("dl_binder_design/af2_initial_guess/model_weights/params"):
         print("Skip and keep the old one.")
 else:
     os.system("mkdir -p dl_binder_design/af2_initial_guess/model_weights/params")
-    os.system("wget https://storage.googleapis.com/alphafold/alphafold_params_2022-12-06.tar -O dl_binder_design/af2_initial_guess/model_weights/params/alphafold_params_2022-12-06.tar")
-    # os.system("wget http://hub.mahhlab.org/downloads/alphafold_params_2022-12-06.tar -O dl_binder_design/af2_initial_guess/model_weights/params/alphafold_params_2022-12-06.tar")
+    # os.system("wget https://storage.googleapis.com/alphafold/alphafold_params_2022-12-06.tar -O dl_binder_design/af2_initial_guess/model_weights/params/alphafold_params_2022-12-06.tar")
+    os.system("wget http://hub.mahhlab.org/downloads/alphafold_params_2022-12-06.tar -O dl_binder_design/af2_initial_guess/model_weights/params/alphafold_params_2022-12-06.tar")
     os.system("cd dl_binder_design/af2_initial_guess/model_weights/params && tar --extract --verbose --file=alphafold_params_2022-12-06.tar")
     

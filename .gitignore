@@ -1,0 +1,7 @@
+
+.ipynb_checkpoints/
+env_config/dl_binder_design
+env_config/RFdiffusion
+out.sc
+.ipynb_*
+__pycache__/
