@@ -5,3 +5,12 @@ env_config/RFdiffusion
 out.sc
 .ipynb_*
 __pycache__/
+utils/.ipynb_checkpoints/make_structure_adj-checkpoint.sh
+utils/.ipynb_checkpoints/make_structure_adj-checkpoint.sh
+env_config/.ipynb_checkpoints/binder_design-checkpoint.yml
+env_config/.ipynb_checkpoints/2_get_ProteinMPNN-checkpoint.py
+env_config/.ipynb_checkpoints/0_create_env-checkpoint.sh
+check.point
+.ipynb_checkpoints/setup-checkpoint.sh
+env_config/.ipynb_checkpoints/0_create_env-checkpoint.sh
+env_config/.ipynb_checkpoints/2_get_ProteinMPNN-checkpoint.py
