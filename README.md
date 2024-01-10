@@ -2,12 +2,29 @@
  Binder_Design_Pipline for CS286
 
 ## Setup
-1. clone this repo and cd to it.
+1. Applied licence of pyRosseta
+    The environment require PyRosetta which requires a license that
+   is free to academics and available [here](https://graylab.jhu.edu/pyrosetta/downloads/documentation/PyRosetta_Install_Tutorial.pdf).
+   This license will give you access to the USERNAME and PASSWORD
+   referenced below. If you do not provide this USERNAME and PASSWORD,
+   you will get a CondaHTTPError when you attempt to run the installation.
+
+After getting license, modify your condarc:
+ - Ensure that you have the PyRosetta channel included in your ~/.condarc
+Your ~/.condarc should look something like this:
+```
+channels:
+  - defaults
+  - https://USER:PASSWORD@conda.graylab.jhu.edu
+```
+    
+
+2. clone this repo and cd to it.
    ```
    git clone https://github.com/Masterchiefm/Binder_Design_CS286.git
    cd Binder_Design_CS286
    ```
-2. Setup the enviroment.
+3. Setup the enviroment.
    ```
    bash setup.py
    ```

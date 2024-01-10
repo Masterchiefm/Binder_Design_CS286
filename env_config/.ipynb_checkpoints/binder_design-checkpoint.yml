@@ -6,12 +6,11 @@ channels:
   - nvidia
 dependencies:
   - python=3.9
-  - numpy=1.21
   - dgl-cuda11.1
   - biopython=1.78
   - ml-collections
   - ml_dtypes
-  - tensorflow
+  - tensorflow=2.12
   - pyrosetta
   - mock
   - pip

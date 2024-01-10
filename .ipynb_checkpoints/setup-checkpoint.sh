@@ -6,8 +6,14 @@ bash 0_create_env.sh
 python3 1_get_RFdffusion.py
 python3 2_get_ProteinMPNN.py
 
-print("\n\n\n\Every thing is done! Enjoin binder designing!")
-print("""
+
+echo "   "
+echo "   "
+echo "   "
+echo " "
+echo -e "\033[31m             Every thing is done! Enjoin binder designing!  \033[0m"
+
+cat > /tmp/.msg << EOF
 ==================================================================================
 Now you can design the binder using the interactive script by typing the following 
 commands and press Enter to run:
@@ -16,6 +22,8 @@ commands and press Enter to run:
 
 
 ----------------------------------------------------------------------------------
+
+
 If you want to use RFdiffution and ProteinMPNN manually,
 Please activate the conda env by:
 
@@ -33,5 +41,6 @@ Then you may design binder yourself.
     If you want to share your script, please create an issue or pull request,
     I will combine it to help more people.
 
+EOF
 
-""")
+cat /tmp/.msg
