@@ -2,7 +2,7 @@
 # This file is created to run binder design.
 # Author: Mo Qiqin
 
-# In [1]
+#                               Input Cell                                     #
 ################################################################################
 #                     Please eidt the following cell
 # Target Infomation
@@ -46,6 +46,30 @@ temperature = 0.25
 seqs_per_struct = 3
 
 ####################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # In [2]
