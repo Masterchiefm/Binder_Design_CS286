@@ -3,7 +3,13 @@
 # This file is used to calculate Rg Score of a protein chain.
 # Support H,C,N,O and S atoms.
 # Created by M.Q.
-import numpy as np
+
+try:
+    import numpy as np
+except:
+    import os
+    os.system('pip install numpy')
+    
 def cal_mass(atoms):
     """输入一串原子，输出总质量。
     Params: 

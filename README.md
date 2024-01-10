@@ -44,7 +44,19 @@ channels:
       ```
 
    3) Wait for Results
-   
+## Troble shooting
+If you encounter erro like this:
+```
+AttributeError: module 'numpy' has no attribute 'object'.
+`np.object` was a deprecated alias for the builtin `object`. To avoid this error in existing code, use `object` by itself. Doing this will not modify any behavior and is safe.
+```
+Please activate to binder_design env and remove tensorflow, then
+re-install tensorflow by:
+```
+mamba install tensorflow=2.12
+```
+This will solve the numpy erro while using tensorflow.
+
 ### Optional
 You can find a conda env created in your home directory, which is
 named binder_design.
