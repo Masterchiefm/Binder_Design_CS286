@@ -53,7 +53,7 @@ channels:
    ```
 3. Setup the enviroment.
    ```
-   bash setup.py
+   bash setup.sh
    ```
    Just wait for about 30min, and the setup will be done!
 
