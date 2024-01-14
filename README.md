@@ -16,7 +16,7 @@
 
  We also add a filter for RF generated structures. These filters will filter out those unstable structures 
  with long alpha-helix, and filter out binders distant from targets. With these filters, we filter out 
- about 70% of the RF generated structures that is useless. By doing so, we reduced time greatly and save
+ about 15% of the RF generated structures that is useless. By doing so, we reduced time greatly and save
  much computational resource.
 
  **Most importantly, we make binder design easier, which save YOUR TIME!**
