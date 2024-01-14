@@ -208,7 +208,8 @@ for i in bar:
         ##########################
         #  To be updated to calculate the dstance between interaction surface.
         #  现在是只计算最短的两个点之间的距离。
-        d = get_min_distance(path)
+        # d = get_min_distance(path)
+        d = get_min_sur_distance(path) # 改称最近的接触面
         ##########################
 
 
