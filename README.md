@@ -78,8 +78,8 @@ channels:
 
    5) Wait for Results.
       
-    You can find your top n binders in {output_folder}/top_n
-    All output structures can be found in {output_folder}
+You can find your top n binders in {output_folder}/top_n
+All output structures can be found in {output_folder}
     
     ```
     top_n               ------- The top n structure rank by Pae_interaction_score
