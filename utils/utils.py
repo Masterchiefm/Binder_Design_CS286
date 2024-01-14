@@ -176,8 +176,30 @@ def get_min_distance(pdb_file_path, chain_1_id="A", chain_2_id="B"):
             d = ((a - b) **2 ).sum()**0.5
             distance.append(d)
     min_d = np.array(distance).min()
-    return min_d          
-
+    return min_d     
+    
+def get_min_sur_distance(pdb_file_path, chain_1_id="A", chain_2_id="B"):
+    """计算两个两个链之间的平均最短距离。
+    Params:
+        pdb_file_path: str, 例如:"/home/chief/桌面/design_ppi_2_dldesign_3.pdb"
+        chain_1_id: str, 例如"A"
+        chain_2_id: str, 例如"B"
+        
+    Returns:
+        min_d: float, 两个链之间的最短距离
+    """
+    loc_B = get_all_attom_location(pdb_file_path,"B")
+    loc_A = get_all_attom_location(pdb_file_path,"A")
+    distance = []
+    
+    for a in loc_A:
+        for b in loc_B:
+            d = ((a - b) **2 ).sum()**0.5
+            distance.append(d)
+    min_d = np.array(distance).min()
+    surface_distance = distance[distance.index(min_d) -5:distance.index(min_d)+5]
+    d = np.array(surface_distance).mean()
+    return d
 # Contributed by Chen Ken:
 def get_min_dis_and_direction(pdb_file_path, chain_1_id="A", chain_2_id="B"):
     """

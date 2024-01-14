@@ -12,7 +12,9 @@ source ~/miniconda3/bin/activate
 echo Creating binder_design env...
 
 # Use mamba to accelarate.
+conda clean -i -y
 conda install conda-forge::mamba -y
+
 mamba env create -f  binder_design.yml
 source ~/miniconda3/bin/activate binder_design
 

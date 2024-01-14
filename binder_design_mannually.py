@@ -80,6 +80,9 @@ import os
 import sys
 from os.path import abspath
 from pathlib import Path
+import time
+
+start_time = time.time()
 try:
     import pandas as pd
 except:
@@ -102,7 +105,11 @@ def check_output(path):
     """用来判断这一步是否完整执行。
     即执行完了文件夹中应该有PDB文件，若无，终止程序
     """
-    files = os.listdir(path)
+    try:
+        files = os.listdir(path)
+    except:
+        print("Out put folder not found! please check the erro above.")
+        sys.exit()
     for i in files:
         if "pdb" in i[-4:]:
             return
@@ -299,12 +306,23 @@ top = top.assign(sequence=sequences)
 top.to_csv(top_score_file, index=0)
 
 
+end_time = time.time()
+# 计算总运行时间（以秒为单位）
+total_seconds = end_time - start_time
+# 将秒数转换为小时、分钟和秒
+hours = int(total_seconds // 3600)
+minutes = int((total_seconds % 3600) // 60)
+seconds = int(total_seconds % 60)
+
+
+
 print(f"""
 
 
 
                     Binder Design Compet!
 =====================================================================
+{hours} h {minutes} min {seconds} s
                         
 You can find your top n binders in {top_file_path}
 
